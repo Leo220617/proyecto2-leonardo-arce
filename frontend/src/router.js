@@ -3,8 +3,8 @@ import Login from './views/Login.vue';
 import Authors from './views/Authors.vue';
 import AuthorDetail from './views/AuthorDetail.vue';
 import Admin from './views/Admin.vue';
-import BooksView from '../views/BooksView.vue' 
-import BookDetailView from '../views/BookDetailView.vue' 
+import BooksView from './views/BooksView.vue' 
+import BookDetailView from './views/BookDetailView.vue' 
 
 const routes = [
   { path: '/', redirect: '/authors' },
