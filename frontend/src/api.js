@@ -1,7 +1,7 @@
 // Detecta si estamos sirviendo todo a través de Netlify Dev (puerto 8888)
 const isNetlifyDev = typeof window !== 'undefined' && window.location && window.location.port === '8888';
 // En Netlify Dev llamamos directo a la Function; en prod usamos /api (redirige por netlify.toml)
-const base = isNetlifyDev ? '/.netlify/functions/api' : '/api';
+export const base = '/.netlify/functions/api';
 
 // Helper robusto para manejar respuestas que no son JSON (p. ej. index.html)
 async function parseJsonSafe(res) {
