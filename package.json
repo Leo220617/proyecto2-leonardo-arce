@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "prebuild": "npm --prefix frontend ci || npm --prefix frontend install",
     "dev": "npm -w frontend run dev",
-    "build": "npm -w frontend run build",
+    "build": "node ./frontend/node_modules/vite/bin/vite.js build",
     "serve": "npm -w frontend run preview",
     "netlify:serve": "netlify dev",
     "lint": "echo 'add your linter'"
