@@ -3,13 +3,17 @@ import Login from './views/Login.vue';
 import Authors from './views/Authors.vue';
 import AuthorDetail from './views/AuthorDetail.vue';
 import Admin from './views/Admin.vue';
+import BooksView from '../views/BooksView.vue' 
+import BookDetailView from '../views/BookDetailView.vue' 
 
 const routes = [
   { path: '/', redirect: '/authors' },
   { path: '/login', component: Login },
   { path: '/authors', component: Authors },
   { path: '/authors/:id', component: AuthorDetail, props: true },
-  { path: '/admin', component: Admin }
+  { path: '/admin', component: Admin },
+   { path: '/books', component: BooksView }, 
+    { path: '/books/:id', component: BookDetailView, props: true }
 ];
 
 const router = createRouter({ history: createWebHistory(), routes });

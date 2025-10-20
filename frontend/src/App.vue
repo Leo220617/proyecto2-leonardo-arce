@@ -4,6 +4,7 @@
       <h1 style="margin:0;">Proyecto 2</h1>
       <router-link to="/authors">Autores</router-link>
       <router-link to="/admin">Admin</router-link>
+      <router-link to="/books">Libros</router-link>
       <div style="margin-left:auto;">
         <router-link to="/login">Login</router-link>
       </div>
